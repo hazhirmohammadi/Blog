@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.section<{$margin?:boolean;}>`
+export const Container = styled.section<{ $margin?: boolean;$bg?:string }>`
     padding-left: 16px;
     padding-right: 16px;
+    background:${prop=>prop.$bg==="header"?"#EFF0F3":prop.$bg==="body"?"#FFFFFE":prop.$bg==="footer"?"#E4E5E9":"none"} ;
     margin-top: ${prop => prop.$margin ? "40px" : "0"};
     margin-bottom: ${prop => prop.$margin ? "40px" : "0"};
     @media (min-width: 768px) {
@@ -40,12 +41,18 @@ export const Container = styled.section<{$margin?:boolean;}>`
     }
 `;
 
-export const TitleSection = styled.h2<{$size?:string}>`
-    font-size: ${prop=>prop.$size?prop.$size:"20px"};
+export const TitleSection = styled.h2<{ $size?: string }>`
+    font-size: ${prop => prop.$size ? prop.$size : "20px"};
     @media (min-width: 768px) {
-        .md\\:px-5 {
-            padding-left: 1.25rem /* 20px */;
-            padding-right: 1.25rem /* 20px */;
-        }
+        padding-left: 1.25rem /* 20px */
+    ;
+        padding-right: 1.25rem /* 20px */
+    ;
+    }
 
+`;
+
+export const Flex = styled.div<{ $display?: string; }>`
+    display: flex;
+    flex-direction: ${prop => prop.$display === "row" ? "row" : prop.$display === "col" ? "column" : "row"};
 `;
