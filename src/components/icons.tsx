@@ -1,4 +1,4 @@
-import { AlignJustify, ChevronDown } from "lucide-react";
+import { AlignJustify, ChevronDown,ChevronRight } from "lucide-react";
 
 interface Icons {
   width?: number,
@@ -9,6 +9,7 @@ interface Icons {
 export const Icons = {
   alignJustify: AlignJustify,
   chevronDown: ChevronDown,
+  chevronRight:ChevronRight,
   reactIcon: ReactIcon,
   tailwindcss: TailwindCss,
   css: Css,

@@ -1,15 +1,16 @@
 import Header from "@/components/common/header";
-import {Hero,Technologist} from "@/components/pages/home/Components";
+import { Articles, Hero, Technologist } from "@/components/pages/home/Components";
 
 
 const Landing = () => {
-    return (
-      <>
-          <Header />
-          <Hero />
-          <Technologist/>
-      </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Technologist />
+      <Articles />
+    </>
+  );
+};
 export default Landing;
 

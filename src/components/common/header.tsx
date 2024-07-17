@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
 
-      <header className="flex flex-row items-center justify-between w-full h-fit lg:py-4 py-3  z-20 px-5 lg:px-11 xl:px-14 2xl:px-24 " >
+      <header className=" flex flex-row items-center justify-between w-full h-fit lg:py-4 py-3  z-20 px-5 lg:px-11 xl:px-14 2xl:px-24 " >
           <h1 className="font-bold cursor-pointer lg:text-2xl text-sm " >DEVBLOG<span className="text-primary lg:text-sm text-xs font-bold" >.blog</span >
           </h1 >
           <ul className="lg:flex flex-row gap-x-24 hidden  items-center" >

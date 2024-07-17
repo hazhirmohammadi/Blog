@@ -37,7 +37,7 @@ export function Hero() {
                       <HeroIcon className="size-[250px] md:size-[370px] lg:size-[420px] xl:size-[520px]" />
                   </div >
               </div >
-              <div className="w-full flex items-end justify-center h-[60px] " >
+              <div className="w-full flex items-end justify-center h-[30px] " >
                   <Icons.chevronDown className="size-14 text-paragraph" />
               </div >
           </Flex >
