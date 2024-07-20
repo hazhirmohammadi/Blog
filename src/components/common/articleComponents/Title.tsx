@@ -7,7 +7,7 @@ interface T {
   className?: string;
 }
 
-const Title = ({ text,subject, className }: T) => {
+export function Title({ text,subject, className }: T) {
   return (
     <div className={`${className}
     flex flex-row justify-between items-center w-full py-6 lg:py-12
@@ -26,4 +26,4 @@ const Title = ({ text,subject, className }: T) => {
   );
 };
 
-export default Title;
+

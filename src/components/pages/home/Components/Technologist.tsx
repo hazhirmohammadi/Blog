@@ -1,49 +1,48 @@
-"use client"
-import Title from "@/components/common/Title";
+"use client";
 import { Icons } from "@/components/icons";
 import { Container, Flex } from "@/lib/styledComponents";
+import { Title } from "../../../common/articleComponents";
+
+const s = {
+  color: "#d9ad0e",
+};
 
 
-interface Technology {
-  nameTech: string;
-  iconTech: React.ComponentType; // Represents the Icon component type
-}
-
-const Technology: Technology[] = [
+const Technology = [
   {
-    nameTech: 'React Js',
-    iconTech: Icons.reactIcon, // Assuming icons are exported as named components
+    nameTech: "Typescript",
+    iconTech: <Icons.typescript className="technology-card size-6 md:size-8 lg:size-16" />,
   },
   {
-    nameTech: 'Javascript',
-    iconTech: Icons.javascript,
+    nameTech: "Javascript",
+    iconTech: <Icons.javascript className="technology-card size-6 md:size-8 lg:size-16" />,
   },
   {
-    nameTech: 'Tailwindcss',
-    iconTech: Icons.tailwindcss,
+    nameTech: "NodeJs",
+    iconTech: <Icons.nodeJs className="technology-card size-6 md:size-8 lg:size-16" />,
   },
   {
-    nameTech: 'css',
-    iconTech: Icons.css,
+    nameTech: "React Js",
+    iconTech: <Icons.reactIcon className="technology-card size-6 md:size-8 lg:size-16" />,
   },
 ];
 
-export function Technologist(){
+export function Technologist() {
   return (
-    <Container $bg="body" $margin={true}>
-      <Title text={'Browse the category'} subject={'category'} />
-      <Flex>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8  w-full">
-          {[...Array(4)].map((item: Technology, index: number) => (
-            <Flex key={index} $display={'col'} className="justify-center items-center rounded-xl bg-header border- [0.2px] border-gray-300 shadow-xl shadow-gray-400 px-6 py-8">
-              <Icons.reactIcon/>
-              <div className="font-semibold text-base text-title mt-5">
-                React Js
-              </div>
-            </Flex>
+    <Container $bg="body" $margin={true} >
+      <Title text={"Browse the category"} subject={"category"} />
+      <Flex >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8  w-full" >
+          {Technology.map((item, index: number) => (
+            <Flex key={index} $display={"col"} className="justify-center items-center rounded-xl bg-header border- [0.2px] border-gray-300 shadow-xl shadow-gray-400 hover:shadow transition-all px-6 py-8" >
+              {item.iconTech}
+              <div className="font-semibold text-base text-title mt-5" >
+                {item.nameTech}
+              </div >
+            </Flex >
           ))}
-        </div>
-      </Flex>
-    </Container>
+        </div >
+      </Flex >
+    </Container >
   );
 }
