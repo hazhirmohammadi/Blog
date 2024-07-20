@@ -1,4 +1,4 @@
-import { AlignJustify, ChevronDown, ChevronRight } from "lucide-react";
+import { AlignJustify, ChevronDown, ChevronRight, Instagram, Linkedin, Twitter } from "lucide-react";
 
 interface Icons {
   width?: number,
@@ -16,6 +16,9 @@ export const Icons = {
   javascript: Javascript,
   nodeJs: NodeJs,
   typescript: Typescript,
+  twitter: Twitter,
+  instagram: Instagram,
+  linkedin: Linkedin,
 };
 
 function Javascript({ width, height, className }: Icons) {
@@ -206,3 +209,5 @@ export function CopyRight({ width, height, className }: Icons) {
     </svg >
   );
 }
+
+

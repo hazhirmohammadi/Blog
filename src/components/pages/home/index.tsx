@@ -1,14 +1,15 @@
 import Header from "@/components/common/header";
-import { Articles, Hero, Technologist } from "@/components/pages/home/Components";
+import { Articles, Hero, Subscribe, Technologist } from "@/components/pages/home/Components";
+import Footer from "@/components/common/footer";
 
 
 const Landing = () => {
   return (
     <>
-      <Header />
       <Hero />
       <Technologist />
       <Articles />
+      <Subscribe />
     </>
   );
 };

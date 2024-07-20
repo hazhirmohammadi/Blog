@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function Articles() {
   return (
-    <Container className="h-screen" >
+    <Container className="" >
       <RowViewArticle
         titleSectionName={"Featured Article"}
         subjectSectionName={"See All Article"}
