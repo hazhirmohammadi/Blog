@@ -14,5 +14,4 @@ export interface ArticleCardViewTypes {
   image: ImageT;
   AvatarCardBlogs: AvatarCard;
   ArticleTitleName:string;
-  data:Array<object>
 }

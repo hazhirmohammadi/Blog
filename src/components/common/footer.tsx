@@ -1,7 +1,7 @@
 "use client";
 import { Container } from "@/lib/styledComponents";
 import { Icons } from "@/components/icons";
-
+//https://www.figma.com/community/file/1395418487146429983
 const Footer = () => {
   return (
     <Container $bg="footer" >

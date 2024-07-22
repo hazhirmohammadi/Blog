@@ -1,4 +1,4 @@
-import { AlignJustify, ChevronDown, ChevronRight, Instagram, Linkedin, Twitter } from "lucide-react";
+import { AlignJustify, ChevronDown, ChevronRight, Instagram, Linkedin, Mail, Twitter,Github } from "lucide-react";
 
 interface Icons {
   width?: number,
@@ -19,6 +19,8 @@ export const Icons = {
   twitter: Twitter,
   instagram: Instagram,
   linkedin: Linkedin,
+  mail: Mail,
+  github:Github
 };
 
 function Javascript({ width, height, className }: Icons) {
