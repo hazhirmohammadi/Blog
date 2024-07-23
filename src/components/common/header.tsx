@@ -14,9 +14,7 @@ import {CopyRight, Icons} from "@/components/icons";
 import Link from "next/link";
 
 const Header = () => {
-
     return (
-
       <header className=" flex flex-row items-center justify-between w-full h-fit lg:py-4 py-3  z-20 px-5 lg:px-11 xl:px-14 2xl:px-24 " >
           <h1 className="font-bold cursor-pointer lg:text-2xl text-sm " >DEVBLOG<span className="text-primary lg:text-sm text-xs font-bold" >.blog</span >
           </h1 >
@@ -34,7 +32,7 @@ const Header = () => {
              <div>
                  <Button className="bg-primary font-semibold text-sm px mr-2" >By me a Coffee ☕</ Button >
                  <Button className="bg-transparent hover:text-white border-primary border-2 text-primary font-semibold text-sm " >
-                     <Link href="/Login">
+                     <Link href="/sing-in">
                          Login
                      </Link>
                  </ Button >
