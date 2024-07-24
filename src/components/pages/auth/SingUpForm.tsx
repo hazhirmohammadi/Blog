@@ -13,7 +13,7 @@ export default function SingUpForm() {
         <h4 className="font-bold text-base md:text-2xl" >Welcome  </h4 >
         <p className="text-paragraph text-xs mt-1">Welcome to my collection</p>
       </div >
-      <Flex $display={"col"} className="gap-y-6 justify-center max-w-[400px] mx-auto  py-10 px-8 bg-neutral-200 mt-4 mb-10  rounded-xl" >
+      <Flex $display={"col"} className="gap-y-6 justify-center max-w-[400px] mx-auto  py-10 px-8 bg-neutral-100 shadow-lg mt-4 mb-10  rounded-xl" >
 
         <div className="w-full text-center" >
           <h4 className="font-semibold" > Sing Up </h4 >

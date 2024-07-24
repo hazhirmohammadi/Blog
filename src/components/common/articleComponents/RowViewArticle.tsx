@@ -18,7 +18,7 @@ export function RowViewArticle({ titleSectionName, subjectSectionName, data }: T
       <Title text={titleSectionName || "Featured Article"} subject={subjectSectionName || "Article"} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" >
         {data ? data.map((item, index) => (
-          <Flex key={Math.random() + index} $display={"col"} className="justify-between bg-neutral-100 rounded-xl min-h-[320px]" >
+          <Flex key={Math.random() + index} $display={"col"} className="justify-between bg-neutral-100 shadow-lg rounded-xl min-h-[320px]" >
             <Image
               src={item.imageArticleCard || "/assets/images/article.png"}
               alt={item.altImageArticle || "article"}

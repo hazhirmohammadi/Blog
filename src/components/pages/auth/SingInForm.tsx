@@ -14,7 +14,7 @@ const SingInForm = () => {
   return (
     <Container $bg={"none"} >
       <form >
-        <Flex $display={"col"} className="gap-y-6 justify-center max-w-[400px] mx-auto  py-10 px-8 bg-neutral-200 my-16  rounded-xl" >
+        <Flex $display={"col"} className="gap-y-6 justify-center max-w-[400px] mx-auto  py-10 px-8 bg-neutral-100 shadow-lg my-16  rounded-xl" >
           <div className="w-full text-center" >
             <h4 className="font-semibold" >Login / Register</h4 >
           </div >
